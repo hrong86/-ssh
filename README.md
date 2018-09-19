@@ -14,7 +14,7 @@
     cd ~/.ssh
   
   >若报错  类似这样的：  cd: /c/Users/Administrator/.ssh: No such file or directory 说明无ssh
-  </br>>生成秘钥  ssh-keygen -t rsa -C "hrong@git.com"   若不设置密码，直接三个回车
+  </br>生成秘钥  ssh-keygen -t rsa -C "hrong@git.com"   若不设置密码，直接三个回车
   
   >若无报错
   > ls 
