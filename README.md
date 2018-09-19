@@ -17,8 +17,8 @@
   </br>生成秘钥  ssh-keygen -t rsa -C "hrong@git.com"   若不设置密码，直接三个回车
   
   >若无报错
-  > ls 
-  >可以看到有.pub为后缀的文件名，说明已经有ssh了
+  </br>ls 
+  </br>可以看到有.pub为后缀的文件名，说明已经有ssh了
   
 3、 查看ssh
   >cat id_rsa.put
