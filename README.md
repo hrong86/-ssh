@@ -1,7 +1,7 @@
 # -ssh
 
 1、第一步：创建账号、邮箱
-      git config --global user.name "hrong"
+      &nbsp;git config --global user.name "hrong"
       git confit --global user.email "hrong@git.com"
   查看账号跟邮箱是否创建好  git config --global user.name  /git config --global user.email
   
