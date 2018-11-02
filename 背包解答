@@ -1,0 +1,53 @@
+求背包里剩余最小空间
+const path = [2, 5, 8 ,9,96, 99, 101];
+const v = 100;
+
+
+
+
+
+答案：
+1、
+const path = [2, 5, 8 ,9,96, 99, 101];
+const v = 100;
+const n = path.length;
+
+// n： 第 n 个物品，hv 包还有多大体积
+function dfs(n, hv) {
+  const currentIndex = n -1;
+  const current = path[currentIndex];
+  // 当没有货物时，占用体积为 0
+  if (n === 0) return 0;
+  // 如果能装下当前物品，那么取 装 或者 不装 最大的体积
+  if (hv - current >= 0) {
+    const value = Math.max( dfs(currentIndex, hv), dfs(currentIndex, hv - current) + current )
+    console.log('4-------',n ,current, hv, value)
+    return value;
+  // 如果装不下，看看下一个物品是不是能装下
+  } else {
+    return dfs(currentIndex, hv);
+  }
+}
+
+console.log( v - dfs(n, v) );
+
+2、
+//  function getGroup(data, index = 0, group = []) {
+//    var need = new Array();
+//    const value = data[index];
+//    need.push(value);
+//    for(var i = 0; i < group.length; i++) {
+//      const _value = group[i] + data[index];
+//      small = v-_value < small ? v - _value : small;
+//      need.push(group[i] + data[index]);
+//    }
+//    group.push.apply(group, need);
+//    if(index + 1 >= data.length){
+//     return group;
+//    } else {
+//     return getGroup(data, index + 1, group);
+//    }
+//  }
+//  getGroup(data);
+//  console.log(small);
+
