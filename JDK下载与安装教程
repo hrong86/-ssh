@@ -60,7 +60,11 @@ public class TestJava{
  
  
  mac环境配置
- 
+ 接下来我们来配置环境变量，执行命令：  
+ touch ~/.bash_profile
+ sudo vim ~/.bash_profile
+ source ~/.bash_profile
+ java -version
  https://jingyan.baidu.com/article/908080221f3cfefd91c80fbf.html
  
  /usr/libexec/java_home命令得到的Java Home路径是：/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home，
