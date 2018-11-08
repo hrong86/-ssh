@@ -57,6 +57,11 @@ public class TestJava{
 此处一定要注意：必须进入文件所在的目录；其次使用javac命令 文件的名字的后面一定要跟着.java的文件后缀；使用java命令时.java后缀可以不用写。 
 当你执行完javac命令如果没有错误提示，说明通过了编译，就会在你的文件目录下生成一个同名的.class文件。 
  
+ 
+ 
+ mac环境配置
+ 
+ https://jingyan.baidu.com/article/908080221f3cfefd91c80fbf.html
 如果你完成了以上的所有，并且结果显示正确，那么说明你的JDK安装和环境配置都很成功，此时你就可以开始你的JAVA学习了。 
 JDK1.8 API链接： 
 http://docs.oracle.com/javase/8/docs/api/ 
