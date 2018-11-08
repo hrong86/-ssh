@@ -69,6 +69,36 @@ public class TestJava{
  java -version
  https://jingyan.baidu.com/article/908080221f3cfefd91c80fbf.html
  
+ 
+ 配置环境变量导致node npm command not found
+ 手残安装了java环境，于是更改了环境变量，结果呀。node，npm 都显示command not found～～～～～～～～
+
+通过一下博主方式更改回来滴～
+
+第一步：创建.bash_profile文件，～表示在～目录下，.表示隐藏文件，打开终端，输入命令如下
+
+touch ~/.bash_profile
+ 
+第二步：打开.bash_profile文件，输入命令如下：
+
+open -t ~/.bash_profile
+ 
+第三步：这时候会弹出一个空白的文本编辑框，在文本编辑框里面第一行编辑：
+
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+command + s保存文件。
+
+
+第四步：保存.bash_profile文件，输入命令：
+
+source .bash_profile
+
+ 
+
+ 
+
+第五步：再输入npm -v 或者node -v  就能看到版本号啦~
+ 
  /usr/libexec/java_home命令得到的Java Home路径是：/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home，
 如果你完成了以上的所有，并且结果显示正确，那么说明你的JDK安装和环境配置都很成功，此时你就可以开始你的JAVA学习了。 
 JDK1.8 API链接： 
