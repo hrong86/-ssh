@@ -62,6 +62,8 @@ public class TestJava{
  mac环境配置
  
  https://jingyan.baidu.com/article/908080221f3cfefd91c80fbf.html
+ 
+ /usr/libexec/java_home命令得到的Java Home路径是：/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home，
 如果你完成了以上的所有，并且结果显示正确，那么说明你的JDK安装和环境配置都很成功，此时你就可以开始你的JAVA学习了。 
 JDK1.8 API链接： 
 http://docs.oracle.com/javase/8/docs/api/ 
