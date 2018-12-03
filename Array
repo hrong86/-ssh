@@ -1,0 +1,3 @@
+Array.apply(null, Array(100)).map(item =>item);
+Array.from({ length: 2 }, () => undefined)
+new Array(7).fill(undefined)
