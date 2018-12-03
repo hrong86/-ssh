@@ -1,0 +1,79 @@
+    const listssss = [
+      {
+        aaaa: '1.1', bbbb: '2.2',
+        arr: [
+          {
+            aaaa: '1', bbbb: '1',
+            arr: [
+              {
+                aaaa: '1', bbbb: '3',
+                arr: [
+                  { aaaa: '5', bbbb: '5' },
+                ],
+              },
+              { aaaa: '2', bbbb: '4' },
+              { aaaa: '11', bbbb: '11' },
+            ]
+          },
+          {
+            aaaa: '6', bbbb: '6',
+            arr: [
+              {
+                aaaa: '7', bbbb: '7',
+                arr: [
+                  { aaaa: '8', bbbb: '8' },
+                ],
+              },
+              { aaaa: '9', bbbb: '9' },
+            ]
+          },
+        ],
+      },
+      {
+        aaaa: '1', bbbb: '2',
+        arr: [
+          {
+            aaaa: '21', bbbb: '21',
+            arr: [
+              {
+                aaaa: '22', bbbb: '22',
+                arr: [
+                  { aaaa: '23', bbbb: '23' },
+                ],
+              },
+              { aaaa: '24', bbbb: '24' },
+              { aaaa: '25', bbbb: '25' },
+            ]
+          },
+          {
+            aaaa: '26', bbbb: '26',
+            arr: [
+              {
+                aaaa: '27', bbbb: '27',
+                arr: [
+                  { aaaa: '28', bbbb: '28' },
+                ],
+              },
+              { aaaa: '29', bbbb: '29' },
+            ]
+          },
+        ],
+      },
+];
+const checkValue = (data, value, a) => {
+  for (let i = 0; i < data.length; i++) {
+    if(a === false) break;
+    const item = data[i];
+    const checked = data && data.find(check => check.bbbb === value.bbbb)|| '';
+    if (checked) {
+      a = false;
+      break;
+    } else if (item.arr && item.arr.length && a!==false) {
+      a = checkValue(item.arr, value, a);
+    }
+  }
+  return a;
+};
+const values = { bbbb: '78' };
+
+const aaaaaa = checkValue(listssss, values, null);
