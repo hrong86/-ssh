@@ -1,5 +1,17 @@
 一、css
-    问题
+    问题：1、 rem跟em的区别？
+         2、 rem布局原理是什么？
+         3、 rem有什么优势跟缺点？ 用户的设置字体将失效
+         4、 通过什么方式把px转成rem
+             $ue-width: 640; /* ue图的宽度 */
+             @function px2rem($px) {
+                 @return #{$px/$ue-width*100}rem;
+             }
+             p {
+                width: px2rem(100);
+             }
+         5、 vw、vh是什么？跟rem有什么区别
+        
     rem和em很容易混淆，其实两个都是css的单位，并且也都是相对单位，现有的em，css3才引入的rem
     em作为font-size的单位时，其代表父元素的字体大小，em作为其他属性单位时，代表自身字体大小——MDN
     
